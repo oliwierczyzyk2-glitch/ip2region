@@ -22,7 +22,7 @@ The `xdb` format generation program automatically processes the input raw data, 
 ### 4. High-Speed Query Response
 
 Even for queries based entirely on the `xdb` file, the single query response time is at the 10-microsecond level. Memory-accelerated queries can be enabled through the following two methods:
-
+test
 1. `vIndex` Index Caching: Uses a fixed `512KiB` of memory to cache vector index data, reducing one disk IO operation and maintaining average query efficiency within 100 microseconds.
 2. Entire `xdb` File Caching: Loads the entire `xdb` file into memory. Memory usage is equal to the `xdb` file size. There is no disk IO operation, maintaining 10-microsecond level query efficiency.
 
